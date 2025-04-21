@@ -93,10 +93,6 @@ A modern attendance management system that uses fingerprint authentication for s
 3. Register users and their fingerprints
 4. Start recording attendance
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -107,8 +103,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📫 Support
 
-For support, email [your-email@example.com] or open an issue in the repository.
-
-## 🙏 Acknowledgments
-
-- [List any acknowledgments or references] 
+For support, open an issue in the repository.
