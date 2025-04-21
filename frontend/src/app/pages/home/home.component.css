@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.home-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+	padding: 20px;
+}
+
+.home-container h1 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.actions {
+	display: flex;
+	gap: 20px;
+}
+
+.actions button {
+	padding: 12px 24px;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 8px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+	background-color: #45a049;
+}

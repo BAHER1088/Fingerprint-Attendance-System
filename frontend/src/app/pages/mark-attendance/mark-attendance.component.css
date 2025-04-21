@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mark-attendance-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	background: #f9f9f9;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.attendance-form {
+	background: white;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+select {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+button[type="submit"] {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	font-size: 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.status-message {
+	margin-top: 20px;
+	color: #4CAF50;
+	font-weight: bold;
+}
+
+.button-group {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.button-group button {
+	padding: 8px 16px;
+	background-color: #2196F3;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+	background-color: #1976D2;
+}
+
+.btn2 {
+	margin-top: 10px;
+}
+
+@media (max-width:500px) {
+	.attendance-form {
+		padding: 20px;
+	}
+
+}

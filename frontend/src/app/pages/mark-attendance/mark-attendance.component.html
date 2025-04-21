@@ -1,0 +1,40 @@
+<div class="mark-attendance-container">
+  <h1>Mark Attendance</h1>
+
+  <form [formGroup]="attendanceForm" (ngSubmit)="onMarkAttendance()" class="attendance-form">
+
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <select formControlName="department" required title="department">
+        <option value="" disabled selected>Select Department</option>
+        <option value="ECE">ECE</option>
+        <option value="CSE">CSE</option>
+        <option value="EPE">EPE</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="currentYear">Current Year:</label>
+      <select formControlName="currentYear" required title="currentYear">
+        <option value="" disabled selected>Select Year</option>
+        <option value="prep">Prep Year</option>
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+      </select>
+    </div>
+
+    <button type="submit">Start Scanning</button>
+  </form>
+
+  <div class="status-message">
+    @if(statusMessage!==''){
+    <p>{{statusMessage}}</p>
+    }
+  </div>
+  <div class="button-group">
+    <button routerLink="/Home">Back to Home</button>
+    <button routerLink="/exportAttendance">Go to Export</button>
+  </div>
+</div>

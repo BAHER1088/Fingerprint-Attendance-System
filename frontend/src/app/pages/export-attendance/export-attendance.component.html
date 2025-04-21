@@ -1,0 +1,45 @@
+<div class="body">
+  <div class="export-container">
+    <h2>Export Attendance</h2>
+    <form [formGroup]="exportForm" (ngSubmit)="onExport()" class="attendance-form">
+
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <select formControlName="department" required title="Select Department">
+          <option value="" disabled selected>Select Department</option>
+          <option value="ECE">ECE</option>
+          <option value="CSE">CSE</option>
+          <option value="EPE">EPE</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="currentYear">Current Year:</label>
+        <select formControlName="currentYear" required title="Select Current Year">
+          <option value="" disabled selected>Select Year</option>
+          <option value="prep">Prep Year</option>
+          <option value="1st">1st Year</option>
+          <option value="2nd">2nd Year</option>
+          <option value="3rd">3rd Year</option>
+          <option value="4th">4th Year</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Date">Date</label>
+        <input [max]="maxDate" type="date" title="Date" formControlName="date">
+
+      </div>
+
+      <button type="submit" class="export-btn">Export to CSV</button>
+      <button [routerLink]="['/Home']" routerLinkActive="router-link-active" class="export-btn" type="button">Back to Home </button>
+    </form>
+
+    <div class="loading-spinner">
+      @if(statusMessage!==''){
+      <p>{{statusMessage}}</p>
+      }
+    </div>
+
+  </div>
+</div>
