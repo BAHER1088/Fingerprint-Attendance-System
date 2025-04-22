@@ -61,7 +61,7 @@ export const exportAttendanceToCSV1 = asyncHandler(async (req: Request, res: Res
 
   // Map to CSV format
   const csvData = logs.map(log => ({
-    studentID: `${log.studentID}`, // To preserve long ID in Excel
+    studentID: `\t${log.studentID}`,
     studentName: log.name,
     department: log.department,
     currentYear: log.currentYear,
